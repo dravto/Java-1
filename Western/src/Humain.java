@@ -69,7 +69,7 @@ public class Humain {
 	}
 	
 	public void presentation() {
-		this.parler("Bonjour, je me nome " + this.getNomComplet() + ", et ma boisson favorite est de " + this.getBoisson());
+		this.parler("Bonjour, je me nomme " + this.getNomComplet() + ", et ma boisson favorite est de " + this.getBoisson());
 	}
 	
 	public void boire() {
