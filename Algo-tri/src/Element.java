@@ -1,3 +1,5 @@
+package tri;
+
 
 public class Element {
 	private int entier;
@@ -7,6 +9,15 @@ public class Element {
 		entier = i;
 		text = string;
 	}
+	
+	public Element(){
+		entier = 0;
+		text = " ";
+ 	}
+	
+	public Element(Element e){
+		this.setElement(e);
+ 	}
 		
 	public int getEntier() {
 		return entier;
@@ -14,6 +25,11 @@ public class Element {
 	
 	public String getText() {
 		return text;
+	}
+	
+	public void setElement(Element e) {
+		this.setEntier(e.getEntier());
+		this.setText(e.getText());
 	}
 	
 	public void setEntier(int i) {
